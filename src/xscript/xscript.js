@@ -31,12 +31,15 @@ export default class XScript {
 	setCookie(input, value) {
 		localStorage.setItem(input, value);
 		if (xBuild.getCookie(input) != value) {
-			xBuild.throw("Error", "Something went xrong with XScript.");
+			xBuild.throw("Error", "Something went wrong with XScript.");
 		}
 	}
 	
 	// Console playground
 	throw(error, details) {
+		if (!details) {
+			details = "Unknown Error";
+		}
 		console.log("${error}: ${details}");
 	}
 }
