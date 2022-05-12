@@ -42,4 +42,34 @@ export default class XScript {
 		}
 		console.log("${error}: ${details}");
 	}
+	
+	// Math playground
+	multiply(xList) {
+		const { xIndex, xCount } = 0;
+		for (xIndex == 0, xIndex < xList.length, xIndex++) {
+			xCount *= xList[xIndex];
+			xIndex += 1;
+		}
+	}
+	addtog(xList) {
+		const { xIndex, xCount } = 0;
+		for (xIndex == 0, xIndex < xList.length, xIndex++) {
+			xCount += xList[xIndex];
+			xIndex += 1;
+		}
+	}
+	substract(xList) {
+		const { xIndex, xCount } = 0;
+		for (xIndex == 0, xIndex < xList.length, xIndex++) {
+			xCount -= xList[xIndex];
+			xIndex += 1;
+		}
+	}
+	divide(xList) {
+		const { xIndex, xCount } = 0;
+		for (xIndex == 0, xIndex < xList.length, xIndex++) {
+			xCount /= xList[xIndex];
+			xIndex += 1;
+		}
+	}
 }
