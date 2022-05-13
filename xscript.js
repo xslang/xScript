@@ -2,7 +2,7 @@ export default class XScript {
 	constructor() {}
 	
 	init() {
-		let xBuild = new XScript();
+		const xBuild = new XScript();
 	}
 	
 	// Url playground
