@@ -22,7 +22,7 @@ First, import it into your file code
 import * from "https://xscript.vercel.app/xscript.js";
 ```
 <br>
-_You can also use the minifies version by importing `https://xscript.vercel.app/xscript.min.js`._<br><br>
+_You can also use the minifies version by importing_ `https://xscript.vercel.app/xscript.min.js`<br><br>
 
 Then, initialize your code by using the following script:
 
