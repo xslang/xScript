@@ -5,7 +5,7 @@ export default class XScript {
 		const xBuild = new XScript();
 	}
 	
-	// Url playground
+	// BOM playground
 	getUrl() {
 		return location.href;
 	}
@@ -71,5 +71,29 @@ export default class XScript {
 			xCount /= xList[xIndex];
 			xIndex += 1;
 		}
+	}
+	
+	// DOM Playground
+	select(query) {
+		if (query.startsWith("#")) {
+			return byId(query);
+		} else if (query.startsWith(".")) {
+			return byClass(query);
+		} else if (query.includes("(") && query.includes(")")) {
+			return query;
+		} else if (!query) {
+			return "Error";
+		} else {
+			return byTag(query);
+		}
+	}
+	byId(query) {
+		return document.getElementById(query);
+	}
+	byClass(query) {
+		return document.getElementsByClassName(query);
+	}
+	byTag(query) {
+		return document.getElementsByTagName(query);
 	}
 }
