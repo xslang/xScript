@@ -50,7 +50,7 @@ Then, to your Javascript file add the following code:
 
 ```js
 const xScript = new XScript();
-xScript.init():
+xScript.init();
 ```
 <br>
 
